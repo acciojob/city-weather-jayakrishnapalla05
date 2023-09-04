@@ -29,7 +29,7 @@ const Weather=()=>{
 
     return (
         <div>
-            <input type="text" value={input} onKeyDown={handleKeyPress} onChange={(e)=>setInput(e.target.value) } placeholder="Enter a City"/>
+            <input type="text" className="search" value={input} onKeyDown={handleKeyPress} onChange={(e)=>setInput(e.target.value) } placeholder="Enter a City"/>
             {error && <p>{error}</p>}
             {
                 !error && weatherData && 
